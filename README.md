@@ -1,2 +1,2 @@
-# WastelessHarvest-frontend
-#project
+# WastelessHarvest frondend 
+#mini project 
