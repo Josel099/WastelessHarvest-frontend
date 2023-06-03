@@ -1,11 +1,22 @@
-import React from "react";
-import "./App.css"
-import ComponentsImport from "./Components/ComponentsImport";
+import {Route,Routes} from 'react-router-dom';
+import About from './About';
+import Contact from './Contact';
+import Home from './Home';
+import Menulist from './Menulist';
+
+import Navbar from './Navbar';
 function App() {
   return (
-    <div className="App">
-  <ComponentsImport/>
-    </div>
+    <>
+    <Navbar/>
+    <Routes>
+      <Route path='/' element={<Home />}/>
+      <Route path='/about' element={<About />}/>
+      <Route path='/menulist' element={<Menulist />}/>
+      <Route path='/contact' element={<Contact />}/>
+    </Routes>
+    </>
+  
   );
 }
 
