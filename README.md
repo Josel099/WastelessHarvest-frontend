@@ -1,2 +1,0 @@
-# WastelessHarvest frondend 
-#mini project 

@@ -1,30 +1,71 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import MenuIcon from '@mui/icons-material/Menu'
-import {useState} from 'react';
+import React, { useState } from "react";
+import "./navbar.css";
+import {
+  FaFacebookSquare,
+  FaInstagramSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
+
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-    const [show,setShow] = useState(true)
-
-    const handleShow= () =>{
-        setShow(current=>!current)
-    }
+  const [showMediaIcons, setShowMediaIcons] = useState(false);
   return (
-  <header>
-    <div className='logo'>
-       Wasteless Harvest
-    </div>
-    {show &&
-    <div className='display-menu'>
-<Link className='menu' to={'/'}>Home</Link>
-<Link className='menu' to={'/menulist'}>Menulist</Link>
-<Link className='menu' to={'/about'}>About</Link>
-<Link className='menu' to={'/contact'}>Contact</Link>
-    </div>
-}
-    <button onClick={handleShow} className='toggle'><MenuIcon /></button>
-  </header>
-  )
-}
+    <>
+      <nav className="main-nav">
+        {/* 1st logo part  */}
+        <div className="logo">
+          <h2>
+            <span>W</span>asteless
+            <span>H</span>arvest
+          </h2>
+        </div>
 
-export default Navbar
+        {/* 2nd menu part  */}
+        <div
+          className={
+            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+          }>
+          <ul>
+            <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact Us</NavLink>
+            </li>
+          </ul>
+        </div>
+
+        {/* sign up and register */}
+        <div className="buttons">
+          <ul  >
+            <li>
+         <button className="button1" >Sign In</button>
+         </li>
+         <li>
+          <button className="button2" >Sign Up</button>
+          </li>
+           </ul>
+
+          {/* hamburget menu start  */}
+          <div className="hamburger-menu">
+            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <GiHamburgerMenu />
+            </a>
+          </div>
+        </div>
+      </nav>
+                        {/* hero section  */}
+       <section className="hero-section">
+        <p>Welcome to </p>
+        <h1>Wastless harvest </h1>
+      </section>
+    </>
+  );
+};
+
+export default Navbar;
