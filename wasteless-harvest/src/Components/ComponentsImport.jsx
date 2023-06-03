@@ -5,7 +5,7 @@ import IntroPage from  "./IntroPage/intro";
 function ComponentsImport() {
   return (
     <div>
-        <IntroPage/>
+        {/* <IntroPage/> */}
 
     </div>
   )
