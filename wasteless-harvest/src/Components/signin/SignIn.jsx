@@ -4,7 +4,7 @@ import "./signin.css";
 
 function SignIn() {
   return (
-    <div>
+    <div className="mainbody">
       <form>
         <div className="header">
         <h1>Sign In</h1>

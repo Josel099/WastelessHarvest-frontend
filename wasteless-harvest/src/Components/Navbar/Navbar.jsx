@@ -1,12 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
-import {
-  FaFacebookSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-} from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -45,10 +39,10 @@ const Navbar = () => {
           <div className="buttons ">
             <ul className="buttons-ul" >
               <li>
-                <button className="button1" >Sign In</button>
+                <button className="button1" ><NavLink to="/signin">Sign In</NavLink></button>
               </li>
               <li>
-                <button className="button2" >Sign Up</button>
+                <button className="button2" ><NavLink to="/signup">Sign Up</NavLink></button>
               </li>
             </ul>
             <div />

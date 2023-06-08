@@ -1,11 +1,12 @@
 /* signin.css */
 
-body {
-    background-color: white;
+.mainbody {
+    background-color: rgb(240, 237, 237);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+
   }
   
   .form-container {
