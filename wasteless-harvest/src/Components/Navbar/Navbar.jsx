@@ -60,11 +60,7 @@ const Navbar = () => {
             </div>
           </div>
       </nav>
-      {/* hero section  */}
-      <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Wastless harvest </h1>
-      </section>
+    
     </>
   );
 };

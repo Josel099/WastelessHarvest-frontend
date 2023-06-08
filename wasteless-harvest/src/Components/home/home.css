@@ -1,0 +1,20 @@
+/* hero section   */
+
+.hero-section {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .hero-section p {
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
+  
+  .hero-section h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    text-align: center;
+  }

@@ -25,7 +25,7 @@ li {
 /* navbar style start  */
 
 .main-nav {
-  width: 100%;
+  width: 100vw;
   height: 10rem;
   display: grid;
   grid-template-columns: 10rem 1fr 2fr 1fr 5rem;
@@ -85,6 +85,7 @@ li {
   border: 1.8px solid rgb(47, 136, 103);
   border-radius: 12px;
   transition-duration: 0.4s;
+  background-color:white
 }
 .button2:hover {
   background-color: rgb(57, 157, 121); /* Green */
@@ -136,26 +137,7 @@ li {
 }
 
 
-/* hero section   */
 
-.hero-section {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hero-section p {
-  font-size: 3rem;
-  text-transform: capitalize;
-}
-
-.hero-section h1 {
-  font-size: 5rem;
-  text-transform: uppercase;
-  text-align: center;
-}
 
 /* responsive css style  */
 @media (max-width: 1080px) {
