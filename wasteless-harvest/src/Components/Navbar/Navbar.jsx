@@ -23,44 +23,45 @@ const Navbar = () => {
         </div>
 
         {/* 2nd menu part  */}
+
         <div
           className={
             showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
           }>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About Us</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact Us</NavLink>
-            </li>
-          </ul>
-        </div>
-
-        {/* sign up and register */}
-        <div className="buttons">
-          <ul  >
-            <li>
-         <button className="button1" >Sign In</button>
-         </li>
-         <li>
-          <button className="button2" >Sign Up</button>
-          </li>
-           </ul>
-
-          {/* hamburget menu start  */}
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
+            <ul>
+              <li>
+                <NavLink to="/">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">About Us</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Contact Us</NavLink>
+              </li>
+            </ul>
           </div>
-        </div>
+
+          {/* sign up and register */}
+          <div className="buttons ">
+            <ul className="buttons-ul" >
+              <li>
+                <button className="button1" >Sign In</button>
+              </li>
+              <li>
+                <button className="button2" >Sign Up</button>
+              </li>
+            </ul>
+            <div />
+            {/* hamburget menu start  */}
+            <div className="hamburger-menu">
+              <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+                <GiHamburgerMenu />
+              </a>
+            </div>
+          </div>
       </nav>
-                        {/* hero section  */}
-       <section className="hero-section">
+      {/* hero section  */}
+      <section className="hero-section">
         <p>Welcome to </p>
         <h1>Wastless harvest </h1>
       </section>
