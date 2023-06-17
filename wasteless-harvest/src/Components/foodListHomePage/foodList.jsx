@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Navbar from '../navbarFoddList/NavbarFoodList'
 function foodList() {
   return (
-    <div>foodList</div>
+    <div><div><Navbar/></div></div>
   )
 }
 

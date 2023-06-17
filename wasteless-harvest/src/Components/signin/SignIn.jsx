@@ -2,6 +2,7 @@ import React ,{useState}from "react";
 import axios from "axios";
 import { useNavigate,Link  } from "react-router-dom";
 import "./signin.css";
+ import Navbar from "../navbar/Navbar"
 
 function SignIn() {
 
@@ -39,6 +40,8 @@ function SignIn() {
 
 
   return (
+    <div>
+      <Navbar/>
     <div className="mainbody">
       <form>
         <div className="header">
@@ -84,6 +87,7 @@ function SignIn() {
         </div>
         <br />
       </form>
+    </div>
     </div>
   );
 }
