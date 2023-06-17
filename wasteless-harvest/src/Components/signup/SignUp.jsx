@@ -21,30 +21,31 @@ const SignUp = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  // if (!formData.name || !email || !password) {
-  //   alert("Please fill in all fields");
-  //   return;
-  // }
+ 
 
 
    const handleSubmit = async(e) => {
     e.preventDefault();
 
+    if (!formData.name || !formData.email || !formData.password || !formData.phone1 ) {
+      alert("Please fill in all fields");
+      return;
+    }
     try {
       await axios.post("http://localhost:8085/api/v1/customer/save", {
         customerName: formData.name,
         email: formData.email,
         phoneNo1: formData.phone1,
-        phoneNo2: formData.phone2,
+        phoneNo2:formData.phone2,
         address: formData.address,
         pinNo: formData.pin,
         organizationName: formData.organization,
         password: formData.password
       });
-      alert("Registation Successfully");
-      navigate("/signup");
+      //alert("Registation Successfully");
+      navigate("/signin");
     } catch (err) {
-      alert(err);
+      console.log(err);
     }
     console.log(formData);
   }
