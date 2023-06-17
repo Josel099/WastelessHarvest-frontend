@@ -140,7 +140,7 @@ return (
 
 
 
-      <button type="submit" onClick={handleChange}>Register</button>
+      <button type="submit" onClick={handleSubmit}>Register</button>
     </form>
   </div>
 );

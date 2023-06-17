@@ -1,19 +1,43 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React ,{useState}from "react";
+import axios from "axios";
+import { useNavigate,Link  } from "react-router-dom";
 import "./signin.css";
-
-
-
 
 function SignIn() {
 
+  const [formData, setFormData] = useState({
+    email: '',
+    password: '',
+  });
+  const navigate = useNavigate();
+  const handleChange = (name, value) => {
+    setFormData({ ...formData, [name]: value });
+  };
+
+
+  const handleSubmit = async(e) => {
+    e.preventDefault();
+
+    if ( !formData.email || !formData.password) {
+      alert("Please fill in all fields");
+      return;
+    }
+    try {
+      await axios.post("http://localhost:8085/api/v1/customer/login", {
+        email: formData.email,
+        password: formData.password
+      });
+      //alert("Registation Successfully");
+      navigate("/foodList");
+    } catch (err) {
+      console.log(err);
+    }
+    console.log(formData);
+  }
 
 
 
 
-
-
-  
   return (
     <div className="mainbody">
       <form>
@@ -27,6 +51,9 @@ function SignIn() {
             type="email"
             id="uname"
             placeholder="email"
+            name="email"
+            value={formData.email}
+            onChange={(e) => handleChange('email', e.target.value)}
           />
         </div>
         
@@ -36,21 +63,17 @@ function SignIn() {
             type="password"
             id="pname"
             placeholder="password"
+            name="password"
+          value={formData.password}
+          onChange={(e) => handleChange('password', e.target.value)}
           />
         </div>
       </div>
        
 
-        <button type="submit" className="getin">
+        <button  className="getin" type="submit" onClick={handleSubmit}>
           Login
         </button>
-        <div className="check">
-          <br />
-          <label>
-            <input id="check" type="checkbox" />
-            <span>Remember me</span>
-          </label>
-        </div>
 
         <br />
         <div className="last">
