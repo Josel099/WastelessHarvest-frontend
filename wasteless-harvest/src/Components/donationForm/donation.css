@@ -3,9 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  
     
   }
-  
+  .maintip{
+
+  }
   .headingdonation {
     margin-bottom: 2rem;
   }

@@ -14,7 +14,7 @@ function Donation() {
         expiryDate: ''
       });
       const navigate = useNavigate();
-      
+
       const handleChange = (name, value) => {
         setFormData({ ...formData, [name]: value });
       };
@@ -49,7 +49,7 @@ function Donation() {
 
 
   return (
-    <>
+    <div className='maintip'>
     <div className='main-body'>
 
     <div className='headingdonation'>
@@ -98,11 +98,11 @@ function Donation() {
          onChange={(e) => handleChange('expiryDate', e.target.value)} />
     </div>
     <div>
-        <button type='submit'monClick={handleSubmit}> List Item</button>
+        <button type='submit'monClick={handleSubmit}> Donate Item</button>
     </div>
     </form>
     </div>
-    </>
+    </div>
   )
 }
 

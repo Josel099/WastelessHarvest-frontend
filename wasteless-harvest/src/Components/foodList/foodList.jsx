@@ -27,14 +27,17 @@ function FoodList() {
           <div className="card-body">
             <h2 className="card-header">{foodItem.foodName}</h2>
           </div>
+          
           <div className="card-body">
-
+            <div className="card-body-content">
           <p className="card-text">Type : {foodItem.foodType}</p>
             <h5 className="card-title">Quantity :{foodItem.foodQuantity}</h5>
+           
             <p className="card-text">Pick-Up Location : {foodItem.pickupLocation}</p>
             <p className="card-text">Contact No : {foodItem.contactNo}</p>
             <p className="card-text">Expiry Date : {foodItem.expiryDate}</p>
-          </div>
+            </div>
+            </div>
         </div>
          ))}
          </div>
