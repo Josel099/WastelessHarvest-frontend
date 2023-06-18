@@ -27,15 +27,26 @@ function SignIn() {
       await axios.post("http://localhost:8085/api/v1/customer/login", {
         email: formData.email,
         password: formData.password
-      });
-      //alert("Registation Successfully");
-      navigate("/foodList");
-    } catch (err) {
-      console.log(err);
-    }
-    console.log(formData);
-  }
+      }).then(
+        (res) => {
+          console.log(res.data);
 
+          if (res.data.message == "Email not exists") {
+            alert("Email not exists");
+          } else if (res.data.message == "Login Success") {
+            navigate("/foodList");
+          } else {
+            alert(" Email and Password not match");
+          }
+        },
+        (fail) => {
+          console.error(fail); // Error!
+        }
+      );
+  } catch (err) {
+    console.log.error(err);
+  }
+}
 
 
 
