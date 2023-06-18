@@ -1,7 +1,7 @@
 import React ,{useState}from "react";
 import axios from "axios";
 import { useNavigate,Link  } from "react-router-dom";
-import "./signin.css";
+import styles from "./signin.module.css";
  import Navbar from "../navbar/Navbar"
 
 function SignIn() {
@@ -42,15 +42,15 @@ function SignIn() {
   return (
     <div>
       <Navbar/>
-    <div className="mainbody">
+    <div className={styles.mainbody}>
       <form>
-        <div className="header">
+        <div className={styles.header}>
         <h1>Sign In</h1>
         </div>
-      <div className="inputbox">
-        <div className="email">
+      <div className={styles.inputbox}>
+        <div className={styles.email}>
           <input
-            className="emailbox"
+            className={styles.emailbox}
             type="email"
             id="uname"
             placeholder="email"
@@ -62,7 +62,7 @@ function SignIn() {
         
         <div className="password">
           <input
-            className="pswbox"
+            className={styles.pswbox}
             type="password"
             id="pname"
             placeholder="password"
@@ -74,14 +74,14 @@ function SignIn() {
       </div>
        
 
-        <button  className="getin" type="submit" onClick={handleSubmit}>
+        <button  className={styles.getin} type="submit" onClick={handleSubmit}>
           Login
         </button>
 
         <br />
-        <div className="last">
+        <div className={styles.last}>
           Don't have an account{" "}
-          <Link className="switch" to="/signup">
+          <Link className={styles.switch} to="/signup">
             Create
           </Link>
         </div>

@@ -6,6 +6,7 @@
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
   text-decoration: none;
+
 }
 
 html {
@@ -32,6 +33,9 @@ li {
   grid-template-columns: 10rem 1fr 2fr 1fr 5rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: fixed;
+    z-index: 100;
+    background-color: #f1f5f3;
 }
 
 .logo {

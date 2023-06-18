@@ -1,26 +1,36 @@
+
 .main-body{
 
-    height: 90vh;
+    
     
     display: flex;
     justify-content: center;
-    padding: 20px;
-    
+    position: relative;
+    top: 15rem;
 }
-
 .card{
     width: 80vw;
   height: 15rem;
-    background-color: rgb(246, 250, 246);
-    border: rgb(196, 207, 196) solid 2px;
+    background-color: rgb(235, 238, 235);
+    border: rgb(227, 238, 227) solid 2px;
+    border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     box-sizing: border-box;
+    margin-top: 5px;
 
-   
 
+
+
+}
+.card:hover{
+    background-color: rgb(231, 241, 231);
+    border: rgb(106, 127, 109) 2px solid;
+    width: 81vw;
+    height: 15rem;
     
 }
+
 
 .card-body{
 align-items: center; /* Vertical alignment */
@@ -36,6 +46,7 @@ padding: 10px;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     font-weight: bolder;
+    color: rgb(77, 112, 77);
 
     
 

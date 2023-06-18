@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
+import {useNavigate} from 'react-router-dom'
 import axios from "axios";
-import "./signup.css"
+import styles from"./signup.module.css"
 import Navbar from "../navbar/Navbar"
-
-import { useNavigate } from "react-router-dom";
 const SignUp = () => {
 
 
@@ -55,12 +54,13 @@ const SignUp = () => {
 
 return (
   <div>
-    <Navbar/>
-  <div className="registration-form">
+    <div><Navbar/></div>
+  <div className={styles.registrationform}>
   
-    <h1>Registration Form</h1>
-    <form onSubmit={handleSubmit}>
-      <div className="form-field">
+  <div className={styles.registrationform1}>
+    <h1>SignUp</h1>
+    <form  onSubmit={handleSubmit}>
+      <div className={styles.formfield}>
         <label htmlFor="name">Name</label>
         <input
           type="text"
@@ -70,7 +70,7 @@ return (
           onChange={(e) => handleChange('name', e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="email">Email</label>
         <input
           type="email"
@@ -80,7 +80,7 @@ return (
           onChange={(e) => handleChange('email', e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="phone1">Phone Number 1</label>
         <input
           type="tel"
@@ -90,7 +90,7 @@ return (
           onChange={(e) => handleChange('phone1', e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="phone2">Phone Number 2</label>
         <input
           type="tel"
@@ -100,7 +100,7 @@ return (
           onChange={(e) => handleChange('phone2', e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="address">Address</label>
         <input
           type="text"
@@ -110,7 +110,7 @@ return (
           onChange={(e) => handleChange('address', e.target.value)}
         />
       </div>
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="pin">PIN Number</label>
         <input
           type="text"
@@ -121,7 +121,7 @@ return (
         />
       </div>
 
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="organization">Organization Name</label>
         <input
           type="text"
@@ -132,7 +132,7 @@ return (
         />
       </div>
 
-      <div className="form-field">
+      <div className={styles.formfield}>
         <label htmlFor="password">Password</label>
         <input
           type="password"
@@ -145,8 +145,9 @@ return (
 
 
 
-      <button type="submit" onClick={handleSubmit}>Register</button>
+      <button className={styles.buttonregister}type="submit" onClick={handleSubmit}>SignUp</button>
     </form>
+    </div>
   </div>
   </div>
 );
