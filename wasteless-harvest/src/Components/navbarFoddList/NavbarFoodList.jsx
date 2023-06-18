@@ -17,7 +17,7 @@ const Navbar = () => {
           <div className="buttons ">
             <ul className="buttons-ul" >
               <li>
-                <button className="button1" ><NavLink to="/signin"> Donate Food </NavLink></button>
+                <button className="button1" ><NavLink to="/donation"> Donate Food </NavLink></button>
               </li>
             </ul>
             <div />
