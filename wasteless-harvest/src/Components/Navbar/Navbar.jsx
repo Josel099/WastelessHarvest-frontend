@@ -1,15 +1,14 @@
 import React, { useState } from "react";
-import "./navbar.css";
-import { GiHamburgerMenu } from "react-icons/gi";
+import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
   return (
     <>
-      <nav className="main-nav">
+      <nav className={styles.mainnav}>
         {/* 1st logo part  */}
-        <div className="logo">
+        <div className={styles.logo}>
           <h2>
             <span>W</span>asteless
             <span>H</span>arvest
@@ -18,10 +17,7 @@ const Navbar = () => {
 
         {/* 2nd menu part  */}
 
-        <div
-          className={
-             "menu-link"
-          }>
+        <div className={styles.menulink}>
             <ul>
               <li>
                 <NavLink to="/">Home</NavLink>
@@ -36,13 +32,13 @@ const Navbar = () => {
           </div>
 
           {/* sign up and register */}
-          <div className="buttons ">
-            <ul className="buttons-ul" >
+          <div className={styles.mainbuttons}>
+            <ul className={styles.buttonsul} >
               <li>
-                <button className="button1" ><NavLink to="/signin">Sign In</NavLink></button>
+                <button className={styles.button1} ><NavLink to="/signin">Sign In</NavLink></button>
               </li>
               <li>
-                <button className="button2" ><NavLink to="/signup">Sign Up</NavLink></button>
+                <button className={styles.button2} ><NavLink to="/signup">Sign Up</NavLink></button>
               </li>
             </ul>
             <div />

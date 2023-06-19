@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Jost", sans-serif;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* navbar style start  */
+
+.mainnav {
+  width: 100vw;
+  height: 10rem;
+  display: grid;
+  grid-template-columns: 10rem 1fr 2fr 1fr 5rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    position: fixed;
+    z-index: 1;
+    background-color: #f1f5f3;
+}
+
+.logo {
+  display: grid;
+  /* background-color: #3b5998; */
+  grid-column: 2/3;
+  justify-content: start;
+  align-items: center;
+
+}
+
+.menulink {
+  grid-column: 3/4;
+}
+
+.menulink ul {
+  height: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.mainbuttons {
+  grid-column: 4/5;
+}
+
+.mainbuttons ul {
+  height: 10rem;
+  display: flex;
+  grid-template-columns: 3fr repeat(3, 1fr);
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainbuttons ul li {
+  text-align: right;
+}
+
+.mainbuttons ul li:first-child {
+  grid-column: 2/3;
+}
+
+.button1{
+  padding:  10px 22px;
+  background-color: rgb(47, 136, 103);
+  border-radius: 12px;
+  color: white;
+  transition-duration: 0.4s;
+  border: 1.8px solid rgb(47, 136, 103);
+}
+.button2{
+  padding: 10px 22px;
+  border: 1.8px solid rgb(47, 136, 103);
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  background-color:white
+}
+.button2:hover {
+  background-color: rgb(57, 157, 121); /* Green */
+  color: white;
+}
+.button1:hover {
+  background-color: white; /* Green */
+  color: black;
+  border: 1.8px solid rgb(47, 136, 103);
+}
+
+/* ----------- Grid part ends ----------------- */
+
+.logo h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  background: -webkit-linear-gradient(#eee, rgb(47, 136, 103));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo h2 span {
+  font-size: 3.5rem;
+}
+
+.menulink ul li {
+  font-size: 1.8rem;
+}
+
+.menulink ul li a {
+  text-transform: capitalize;
+  color: rgba(0, 0, 3, 0.8);
+  transition: 0.5s;
+}
+.menulink ul li:hover > a {
+  transform-origin: left;
+  color: rgba(0, 0, 3, 1);
+  text-decoration: underline;
+  transition: 0.5s;
+}
+
+.mainbuttons ul li {
+  font-size: 1.8rem;
+}
+
+
+
+
+
