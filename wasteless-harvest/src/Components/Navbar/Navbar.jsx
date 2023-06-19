@@ -4,7 +4,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+
   return (
     <>
       <nav className="main-nav">
@@ -20,7 +20,7 @@ const Navbar = () => {
 
         <div
           className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
+             "menu-link"
           }>
             <ul>
               <li>
@@ -46,12 +46,9 @@ const Navbar = () => {
               </li>
             </ul>
             <div />
-            {/* hamburget menu start  */}
-            <div className="hamburger-menu">
-              <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-                <GiHamburgerMenu />
-              </a>
-            </div>
+
+      
+           
           </div>
       </nav>
     
