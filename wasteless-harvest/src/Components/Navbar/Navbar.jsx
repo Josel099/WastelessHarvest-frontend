@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
+import { BiMenuAltRight } from 'react-icons/bi';
+
 
 const Navbar = () => {
 
@@ -32,7 +34,7 @@ const Navbar = () => {
           </div>
 
           {/* sign up and register */}
-          <div className={styles.mainbuttons}>
+          {/* <div className={styles.mainbuttons}>
             <ul className={styles.buttonsul} >
               <li>
                 <button className={styles.button1} ><NavLink to="/signin">Sign In</NavLink></button>
@@ -45,7 +47,13 @@ const Navbar = () => {
 
       
            
+          </div> */}
+
+          <div>
+          <h2><BiMenuAltRight/></h2>
+
           </div>
+
       </nav>
     
     </>
