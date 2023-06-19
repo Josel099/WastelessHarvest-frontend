@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
+  text-decoration: none;
 }
 li{
   list-style: none;
@@ -67,45 +68,62 @@ li{
   width: 25%;
   display: flex;
   justify-content: center;
+  list-style: none;
 }
 .mainbuttons ul{
   height: 10rem;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  /* justify-content: flex-end; */
 
   
   
 }
 
-.button1 > a {
+.button1  {
   padding:  10px 22px;
   background-color: rgb(47, 136, 103);
   border-radius: 12px;
   color: rgb(255, 248, 248);
   transition-duration: 0.4s;
   border: 1.8px solid rgb(47, 136, 103);
+  text-decoration: none;
 }
-.button2 >a {
+.button2  {
   padding: 10px 22px;
+  background-color: #fbf6f6;
   border: 1.8px solid rgb(47, 136, 103);
   border-radius: 12px;
   transition-duration: 0.4s;
   color: black;
   margin: 20px;
+  text-decoration: none;
   
 }
 
-.button1:hover {
+.button1:hover{
 
   color: black;
+  background-color: #fbf6f6;
   border: 1.8px solid rgb(47, 136, 103);
 }
-.button2:hover > a{
+.button2:hover{
   background-color: rgb(57, 157, 121); /* Green */
   color: white;
 }
 
 
+.BiMenuAltRight{
+  font-size: 3rem;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: green;
+  padding: 5rem;
+  
+}
 
-
+.BiMenuAltRight h2{
+height: 5rem;
+}

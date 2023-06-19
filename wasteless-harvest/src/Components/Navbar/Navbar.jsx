@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
-import { BiMenuAltRight } from "react-icons/bi";
+import { GiHamburgerMenu} from "react-icons/gi";
 
 const Navbar = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <>
       <nav className={styles.mainnav}>
@@ -32,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {/* sign up and register */}
-        <div className={styles.mainbuttons}>
+        {/* <div className={styles.mainbuttons}>
           <ul className={styles.buttonsul}>
             <li>
               <button className={styles.button1}>
@@ -46,12 +53,12 @@ const Navbar = () => {
             </li>
           </ul>
           <div />
-        </div>
+        </div> */}
 
-        {/* <div>
-          <h2><BiMenuAltRight/></h2>
+        <div className={styles.BiMenuAltRight}>
+          <h2><GiHamburgerMenu/></h2>
 
-          </div> */}
+          </div>
       </nav>
     </>
   );
