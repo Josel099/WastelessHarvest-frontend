@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
-import { BiMenuAltRight } from 'react-icons/bi';
-
+import { BiMenuAltRight } from "react-icons/bi";
 
 const Navbar = () => {
-
   return (
     <>
       <nav className={styles.mainnav}>
@@ -20,42 +18,41 @@ const Navbar = () => {
         {/* 2nd menu part  */}
 
         <div className={styles.menulink}>
-            <ul>
-              <li>
-                <NavLink to="/">Home</NavLink>
-              </li>
-              <li>
-                <NavLink to="/about">About Us</NavLink>
-              </li>
-              <li>
-                <NavLink to="/contact">Contact Us</NavLink>
-              </li>
-            </ul>
-          </div>
+          <ul>
+            <li>
+              <NavLink className={styles.switch} to="/">Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about">About Us</NavLink>
+            </li>
+            <li>
+              <NavLink to="/contact">Contact Us</NavLink>
+            </li>
+          </ul>
+        </div>
 
-          {/* sign up and register */}
-          {/* <div className={styles.mainbuttons}>
-            <ul className={styles.buttonsul} >
-              <li>
-                <button className={styles.button1} ><NavLink to="/signin">Sign In</NavLink></button>
-              </li>
-              <li>
-                <button className={styles.button2} ><NavLink to="/signup">Sign Up</NavLink></button>
-              </li>
-            </ul>
-            <div />
+        {/* sign up and register */}
+        <div className={styles.mainbuttons}>
+          <ul className={styles.buttonsul}>
+            <li>
+              <button className={styles.button1}>
+                <NavLink to="/signin">Sign In</NavLink>
+              </button>
+            </li>
+            <li>
+              <button className={styles.button2}>
+                <NavLink to="/signup">Sign Up</NavLink>
+              </button>
+            </li>
+          </ul>
+          <div />
+        </div>
 
-      
-           
-          </div> */}
-
-          <div>
+        {/* <div>
           <h2><BiMenuAltRight/></h2>
 
-          </div>
-
+          </div> */}
       </nav>
-    
     </>
   );
 };

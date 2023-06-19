@@ -1,20 +1,18 @@
 * {
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
-  text-decoration: none;
 }
-
-li {
+li{
   list-style: none;
 }
-
 /* navbar style start  */
-
 .mainnav {
   width: 100vw;
   height: 10rem;
-  display: grid;
-  grid-template-columns: 10rem 1fr 2fr 1fr 5rem;
+  display: flex;
+  flex-direction: row;/*defaultly row */ 
+  justify-content: space-around; /*horizontal alignment*/
+  align-items: center; /*vertically alignment*/
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     position: fixed;
@@ -22,72 +20,11 @@ li {
     background-color: #f1f5f3;
 }
 
-.logo {
-  display: grid;
-  /* background-color: #3b5998; */
-  grid-column: 2/3;
-  justify-content: start;
-  align-items: center;
-
-}
-
-.menulink {
-  grid-column: 3/4;
-}
-
-.menulink ul {
-  height: 10rem;
+.logo{
+  width: 30%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
 }
-
-.mainbuttons {
-  grid-column: 4/5;
-}
-
-.mainbuttons ul {
-  height: 10rem;
-  display: flex;
-  grid-template-columns: 3fr repeat(3, 1fr);
-  align-items: center;
-  justify-content: space-around;
-}
-
-.mainbuttons ul li {
-  text-align: right;
-}
-
-.mainbuttons ul li:first-child {
-  grid-column: 2/3;
-}
-
-.button1{
-  padding:  10px 22px;
-  background-color: rgb(47, 136, 103);
-  border-radius: 12px;
-  color: white;
-  transition-duration: 0.4s;
-  border: 1.8px solid rgb(47, 136, 103);
-}
-.button2{
-  padding: 10px 22px;
-  border: 1.8px solid rgb(47, 136, 103);
-  border-radius: 12px;
-  transition-duration: 0.4s;
-  background-color:white
-}
-.button2:hover {
-  background-color: rgb(57, 157, 121); /* Green */
-  color: white;
-}
-.button1:hover {
-  background-color: white; /* Green */
-  color: black;
-  border: 1.8px solid rgb(47, 136, 103);
-}
-
-/* ----------- Grid part ends ----------------- */
 
 .logo h2 {
   font-size: 3rem;
@@ -102,26 +39,72 @@ li {
   font-size: 3.8rem;
 }
 
-.menulink ul li {
-  font-size: 1.8rem;
+.menulink {
+  width:40%;
 }
 
-.menulink ul li a {
-  text-transform: capitalize;
-  color: rgba(0, 0, 3, 0.8);
-  transition: 0.5s;
+.menulink ul {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
+
+.menulink ul li > a {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(49, 127, 81);
+}
+
 .menulink ul li:hover > a {
   transform-origin: left;
-  color: rgba(0, 0, 3, 1);
+  color: rgb(37, 87, 66);
   text-decoration: underline;
   transition: 0.5s;
 }
 
-.mainbuttons ul li {
-  font-size: 1.8rem;
+.mainbuttons{
+  width: 25%;
+  display: flex;
+  justify-content: center;
+}
+.mainbuttons ul{
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  
+  
 }
 
+.button1 > a {
+  padding:  10px 22px;
+  background-color: rgb(47, 136, 103);
+  border-radius: 12px;
+  color: rgb(255, 248, 248);
+  transition-duration: 0.4s;
+  border: 1.8px solid rgb(47, 136, 103);
+}
+.button2 >a {
+  padding: 10px 22px;
+  border: 1.8px solid rgb(47, 136, 103);
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  color: black;
+  margin: 20px;
+  
+}
+
+.button1:hover {
+
+  color: black;
+  border: 1.8px solid rgb(47, 136, 103);
+}
+.button2:hover > a{
+  background-color: rgb(57, 157, 121); /* Green */
+  color: white;
+}
 
 
 
