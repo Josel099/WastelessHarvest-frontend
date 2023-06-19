@@ -113,17 +113,44 @@ li{
 }
 
 
-.BiMenuAltRight{
-  font-size: 3rem;
+.GiHamburgerMenu{
+  font-size: 4rem;
   width: 20%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  display: row;
+  /* align-items: center; */
+  justify-content: center;
   color: green;
   padding: 5rem;
-  
+}
+.dropdownMenu {
+  border: rgb(63, 71, 63) 2px solid;
+  min-width: 10rem;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: #6fc699;
+  position: absolute;
+  top: 6rem;
+  background-color: #60c560;
+  padding: 10px;
+  text-align: center;
+
+}
+.open .dropdownMenu {
+  display: block;
+  opacity: 1;
+  background-color: #fbf6f6;
+}
+.dropdownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.BiMenuAltRight h2{
-height: 5rem;
+.dropdownMenu ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
 }
+
+
+

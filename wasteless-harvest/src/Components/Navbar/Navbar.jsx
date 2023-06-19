@@ -55,10 +55,27 @@ const Navbar = () => {
           <div />
         </div> */}
 
-        <div className={styles.BiMenuAltRight}>
-          <h2><GiHamburgerMenu/></h2>
-
+<div className={styles.GiHamburgerMenu} >
+            <GiHamburgerMenu onClick={toggleMenu}/>
+        {isMenuOpen && (
+          <div className={styles.dropdownMenu}>
+            <ul>
+              <li>
+                <NavLink  to="/">Donate</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">My List</NavLink>
+              </li>
+              <li>
+                <NavLink to="/about">Home</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contact">Settings</NavLink>
+              </li>
+            </ul>
           </div>
+        )}
+      </div>
       </nav>
     </>
   );
