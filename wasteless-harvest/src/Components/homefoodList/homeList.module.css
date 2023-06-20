@@ -1,8 +1,4 @@
-
-.main-body{
-
-    
-    
+.mainbody{
     display: flex;
     justify-content: center;
     position: relative;
@@ -19,7 +15,7 @@
     box-sizing: border-box;
     margin-top: 5px;
 }
-.card-body-content{
+.cardbodycontent{
     font-size: 15px;
 }
 .card:hover{
@@ -31,7 +27,7 @@
 }
 
 
-.card-body{
+.cardbody{
 align-items: center; /* Vertical alignment */
  justify-content: center; /* Horizontal alignment */
 float: left;
@@ -40,7 +36,7 @@ padding: 10px;
 
 
 }
-.card-header{
+.cardheader{
 
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
@@ -50,3 +46,4 @@ padding: 10px;
     
 
 }
+

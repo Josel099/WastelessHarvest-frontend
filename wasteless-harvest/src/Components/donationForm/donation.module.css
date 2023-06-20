@@ -1,13 +1,11 @@
-.main-body {
+.mainbody {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  
-    
   }
   .maintip{
-
+    padding:15rem;
   }
   .headingdonation {
     margin-bottom: 2rem;
@@ -25,7 +23,7 @@
     border-radius: 5px;
   }
   
-  .sub-part {
+  .subpart {
     margin-bottom: 1.5rem;
   }
   

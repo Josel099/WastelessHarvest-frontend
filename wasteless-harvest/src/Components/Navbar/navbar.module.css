@@ -80,7 +80,7 @@ li{
   
 }
 
-.button1  {
+.button1 {
   padding:  10px 22px;
   background-color: rgb(47, 136, 103);
   border-radius: 12px;
@@ -98,7 +98,6 @@ li{
   color: black;
   margin: 20px;
   text-decoration: none;
-  
 }
 
 .button1:hover{

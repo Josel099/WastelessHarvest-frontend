@@ -50,7 +50,7 @@ console.log(isSignedIn);
                 <NavLink to="/about">My List</NavLink>
               </li>
               <li>
-                <NavLink to="/about">Home</NavLink>
+                <NavLink to="/homeList">Home</NavLink>
               </li>
               <li>
                 <NavLink to="/contact">Settings</NavLink>

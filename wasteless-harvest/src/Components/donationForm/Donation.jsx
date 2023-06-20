@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom'
 import axios from "axios";
-import "./donation.css"
+import styles from "./donation.module.css"
 
 function Donation() {
 
@@ -49,14 +49,14 @@ function Donation() {
 
 
   return (
-    <div className='maintip'>
-    <div className='main-body'>
+    <div className={styles.maintip}>
+    <div className={styles.mainbody}>
 
-    <div className='headingdonation'>
+    <div className={styles.headingdonation}>
     <h1> Donate </h1>
     </div>
     <form onSubmit={handleSubmit}>
-    <div className='sub-part'>
+    <div className={styles.subpart}>
         <label>Food Name</label>
         <input
          type='text' 
@@ -64,41 +64,41 @@ function Donation() {
         onChange={(e) => handleChange('foodName', e.target.value)}
         />
     </div>
-    <div className='sub-part'>
+    <div className={styles.subpart}>
         <label>Food Type</label>
         <input type='text' 
         value={formData.foodType}
         onChange={(e) => handleChange('foodType', e.target.value)} />
     </div>
-    <div className='sub-part'>
+    <div className={styles.subpart}>
         <label>Food Quantity</label>
         <input type='text' 
         value={formData.foodQuantity}
         onChange={(e) => handleChange('foodQuantity', e.target.value)}
         />
     </div>
-    <div className='sub-part'>
+    <div className={styles.subpart}>
         <label>Pick-Up Location</label>
         <input type='text'
         value={formData.pickUpLocation}
         onChange={(e) => handleChange('pickUpLocation', e.target.value)}
           />
     </div >
-    <div className='sub-part'>
+    <div className={styles.subpart}>
         <label>Contact No </label>
         <input type='tel' 
          value={formData.contactNo}
          onChange={(e) => handleChange('contactNo', e.target.value)}
          />
     </div>
-    <div className='sub-part'>
+    <div className={styles.subpart}>
         <label>Expiry Date</label>
         <input type='date' 
          value={formData.expiryDate}
          onChange={(e) => handleChange('expiryDate', e.target.value)} />
     </div>
     <div>
-        <button type='submit'monClick={handleSubmit}> Donate Item</button>
+        <button type='submit' onClick={handleSubmit}> Donate Item</button>
     </div>
     </form>
     </div>
