@@ -3,7 +3,7 @@ import { Route,Routes } from 'react-router-dom';
 import SignIn from './Components/signin/SignIn';
 import SignUp from './Components/signup/SignUp';
 import Home from "./Components/home/Home"
-import FoodList from './Components/foodList/foodList'
+import HomeList from './Components/homeList/HomeList';
 import Donation from './Components/donationForm/Donation';
 import Navbar from './Components/navbar/Navbar';
 function ComponentsImport() {
@@ -25,7 +25,7 @@ function ComponentsImport() {
     <Route path="/" element={<Home/>}/>
     <Route path="/signin" element={<SignIn  onSignIn={handleSignIn} />}/>
     <Route path="/signup" element={<SignUp/>}/>
-    <Route path='/foodList' element={<FoodList/>}/>
+    <Route path='/homelist' element={<HomeList/>}/>
     <Route path='/donation' element={<Donation/>}/>
   </Routes>
   

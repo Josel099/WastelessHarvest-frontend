@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {useNavigate} from 'react-router-dom'
 import axios from "axios";
-import "./donation.css"
+// import "./donation.css"
 
 function Donation() {
 
