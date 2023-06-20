@@ -28,17 +28,15 @@ function SignIn({ onSignIn }) {
         password: formData.password
       }).then(
         (res) => {
-          console.log(res.data);
-
+          //console.log(res.data);
           if (res.data.message == "Email not exists") {
             alert("Email not exists");
           } else if (res.data.message == "Login Success") {
-
             navigate('/homeList');
-
-
-            onSignIn();
-
+            onSignIn(); // this method for displaying toogle bar when signed in .
+            const customerId = res.data.customerId;// Extract the customer ID from the response and store it
+            // Store the customer ID in local storage or in a state variable
+            localStorage.setItem('customerId', customerId);
           } else {
             alert(" Email and Password not match");
           }

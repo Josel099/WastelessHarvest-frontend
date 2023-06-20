@@ -6,6 +6,7 @@ import Home from "./Components/home/Home"
 import HomeList from './Components/homefoodList/HomeList'
 import Donation from './Components/donationForm/Donation';
 import Navbar from './Components/navbar/Navbar';
+import Mylist from './Components/Mylist/Mylist';
 function ComponentsImport() {
 
 
@@ -26,8 +27,8 @@ function ComponentsImport() {
     <Route path="/signin" element={<SignIn  onSignIn={handleSignIn} />}/>
     <Route path="/signup" element={<SignUp/>}/>
     <Route path='/homeList' element={<HomeList/>}/>
-
     <Route path='/donation' element={<Donation/>}/>
+    <Route path='/mylist' element={<Mylist/>}/>
   </Routes>
   
 

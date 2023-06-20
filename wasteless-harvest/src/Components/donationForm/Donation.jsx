@@ -4,6 +4,12 @@ import axios from "axios";
 import styles from "./donation.module.css"
 function Donation() {
 
+
+  const customer = {// creating an object to send backend to retrive the customer Id .
+    customerId: parseInt(localStorage.getItem('customerId'))
+  };
+
+
     const [formData, setFormData] = useState({
         foodName: '',
         foodType: '',
@@ -29,6 +35,7 @@ function Donation() {
     try {
       await axios.post("http://localhost:8085/api/v1/foodItem/donateFood", {
         foodName: formData.foodName,
+        customer: customer,// sending object to the backend to retrive the "customerId"
         foodType: formData.foodType,
         foodQuantity: formData.foodQuantity,
         pickupLocation:formData.pickUpLocation,
@@ -36,7 +43,7 @@ function Donation() {
         expiryDate: formData.expiryDate,
       });
       //alert("Registation Successfully");
-      navigate("/foodList");
+      navigate("/homeList");
     } catch (err) {
       console.log(err);
     }

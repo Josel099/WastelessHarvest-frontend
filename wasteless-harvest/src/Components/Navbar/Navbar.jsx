@@ -47,10 +47,10 @@ console.log(isSignedIn);
           <div className={styles.dropdownMenu}>
             <ul>
               <li >
-                <NavLink  to="/">Donate</NavLink>
+                <NavLink  to="/donation">Donate</NavLink>
               </li>
               <li>
-                <NavLink to="/">My List</NavLink>
+                <NavLink to="/mylist">My List</NavLink>
               </li>
               <li>
                 <NavLink to="/homeList">Home</NavLink>
