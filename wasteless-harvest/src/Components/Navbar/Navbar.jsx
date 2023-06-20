@@ -37,6 +37,9 @@ console.log(isSignedIn);
             </li>
           </ul>
         </div>
+        
+        {/* conditions for showing buttons or toggle bar ? */}
+        
       {isSignedIn ? 
        (<div className={styles.GiHamburgerMenu} >
             <GiHamburgerMenu onClick={toggleMenu}/>
@@ -47,13 +50,13 @@ console.log(isSignedIn);
                 <NavLink  to="/">Donate</NavLink>
               </li>
               <li>
-                <NavLink to="/about">My List</NavLink>
+                <NavLink to="/">My List</NavLink>
               </li>
               <li>
                 <NavLink to="/homeList">Home</NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Settings</NavLink>
+                <NavLink to="/">Settings</NavLink>
               </li>
             </ul>
           </div>

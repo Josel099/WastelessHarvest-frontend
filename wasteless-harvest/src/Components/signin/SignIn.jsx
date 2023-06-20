@@ -33,7 +33,10 @@ function SignIn({ onSignIn }) {
           if (res.data.message == "Email not exists") {
             alert("Email not exists");
           } else if (res.data.message == "Login Success") {
+
             navigate('/homeList');
+
+
             onSignIn();
 
           } else {
