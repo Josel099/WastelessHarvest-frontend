@@ -54,7 +54,6 @@ const SignUp = () => {
 
 return (
   <div>
-    <div><Navbar/></div>
   <div className={styles.registrationform}>
   
   <div className={styles.registrationform1}>

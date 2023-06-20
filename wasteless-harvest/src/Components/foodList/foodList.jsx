@@ -19,7 +19,6 @@ function FoodList() {
   return (
     <div>
       
-<Navbar />
       <div className="main-body">
         <div className="cardbody-outer">
       {foodArray.map((foodItem) =>(

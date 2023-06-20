@@ -39,7 +39,7 @@ const Navbar = () => {
         </div>
 
         {/* sign up and register */}
-        {/* <div className={styles.mainbuttons}>
+        <div className={styles.mainbuttons}>
           <ul className={styles.buttonsul}>
             <li>
               <button className={styles.button1}>
@@ -53,14 +53,14 @@ const Navbar = () => {
             </li>
           </ul>
           <div />
-        </div> */}
+        </div>
 
-<div className={styles.GiHamburgerMenu} >
+{/* <div className={styles.GiHamburgerMenu} >
             <GiHamburgerMenu onClick={toggleMenu}/>
         {isMenuOpen && (
           <div className={styles.dropdownMenu}>
             <ul>
-              <li>
+              <li >
                 <NavLink  to="/">Donate</NavLink>
               </li>
               <li>
@@ -75,7 +75,7 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-      </div>
+      </div> */}
       </nav>
     </>
   );

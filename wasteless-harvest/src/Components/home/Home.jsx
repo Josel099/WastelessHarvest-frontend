@@ -4,7 +4,6 @@ import Navbar from "../navbar/Navbar"
 function Home() {
   return (
      <div>
-     <Navbar/>
      <div className={styles.herosection}>
       
      <p>Welcome to </p>

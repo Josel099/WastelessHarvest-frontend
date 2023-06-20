@@ -2,7 +2,6 @@ import React ,{useState}from "react";
 import axios from "axios";
 import { useNavigate,Link  } from "react-router-dom";
 import styles from "./signin.module.css";
- import Navbar from "../navbar/Navbar"
 
 function SignIn() {
 
@@ -52,7 +51,7 @@ function SignIn() {
 
   return (
     <div>
-      <Navbar/>
+
     <div className={styles.mainbody}>
       <form>
         <div className={styles.header}>
