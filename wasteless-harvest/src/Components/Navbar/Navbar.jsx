@@ -3,10 +3,10 @@ import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu} from "react-icons/gi";
 
-const Navbar = () => {
+const Navbar = ({isSignedIn}) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+console.log(isSignedIn);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -37,25 +37,8 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-
-        {/* sign up and register */}
-        <div className={styles.mainbuttons}>
-          <ul className={styles.buttonsul}>
-            <li>
-              <button className={styles.button1}>
-                <NavLink to="/signin">Sign In</NavLink>
-              </button>
-            </li>
-            <li>
-              <button className={styles.button2}>
-                <NavLink to="/signup">Sign Up</NavLink>
-              </button>
-            </li>
-          </ul>
-          <div />
-        </div>
-
-{/* <div className={styles.GiHamburgerMenu} >
+      {isSignedIn ? 
+       (<div className={styles.GiHamburgerMenu} >
             <GiHamburgerMenu onClick={toggleMenu}/>
         {isMenuOpen && (
           <div className={styles.dropdownMenu}>
@@ -75,7 +58,27 @@ const Navbar = () => {
             </ul>
           </div>
         )}
-      </div> */}
+      </div>):(  
+        /* sign up and register */
+         <div className={styles.mainbuttons}>
+          <ul className={styles.buttonsul}>
+            <li>
+              <button className={styles.button1}>
+                <NavLink to="/signin">Sign In</NavLink>
+              </button>
+            </li>
+            <li>
+              <button className={styles.button2}>
+                <NavLink to="/signup">Sign Up</NavLink>
+              </button>
+            </li>
+          </ul>
+          <div />
+        </div>)}
+        
+     
+
+
       </nav>
     </>
   );

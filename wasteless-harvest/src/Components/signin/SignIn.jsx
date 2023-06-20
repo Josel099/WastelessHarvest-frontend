@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate,Link  } from "react-router-dom";
 import styles from "./signin.module.css";
 
-function SignIn() {
+function SignIn({ onSignIn }) {
 
   const [formData, setFormData] = useState({
     email: '',
@@ -34,6 +34,8 @@ function SignIn() {
             alert("Email not exists");
           } else if (res.data.message == "Login Success") {
             navigate("/foodList");
+            onSignIn();
+
           } else {
             alert(" Email and Password not match");
           }
