@@ -9,10 +9,7 @@ function Mylist() {
   useEffect(() => {
     getFoodItem();
   }, []);
-
-
-
-
+  
   function getFoodItem() {
     axios
       .get(`http://localhost:8085/api/v1/foodItem/getMyList/${customerId}`)
@@ -25,7 +22,11 @@ function Mylist() {
 
 function deleteFoodItem(foodId){
 axios.delete(`http://localhost:8085/api/v1/foodItem/deleteFoodItem/${foodId}`)
-.catch((e)=>console.log(e))
+.then(res => {
+  // Remove the deleted food item from the foodArray
+  setFoodArray(prevFoodArray => prevFoodArray.filter(item => item.foodId !== foodId));
+})
+.catch(e => console.log(e)); 
 }
 
   return (
