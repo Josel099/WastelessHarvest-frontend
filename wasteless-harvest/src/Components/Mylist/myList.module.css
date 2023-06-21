@@ -28,14 +28,31 @@
 
 
 .cardbody{
-align-items: center; /* Vertical alignment */
- justify-content: center; /* Horizontal alignment */
+    display: flex;
+ /* Vertical alignment */
+ justify-content: space-between; /* Horizontal alignment */
 float: left;
 width: 50%;
 padding: 10px;
-
-
 }
+
+.cardbody button{
+    border: green solid 0px;
+    background-color: rgb(165, 175, 165);
+    
+}
+.cardbody button :hover{
+background-color: red;
+color: black;
+}
+.cardbody svg{
+    font-size: 3rem;
+    color: rgb(39, 127, 64);
+    font-size: 3rem;
+}
+
+
+
 .cardheader{
 
     font-size: 40px;

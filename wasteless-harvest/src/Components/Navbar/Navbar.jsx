@@ -64,7 +64,7 @@ console.log(isSignedIn);
       </div>):(  
         /* sign up and register */
          <div className={styles.mainbuttons}>
-          <ul className={styles.buttonsul}>
+          <ul >
             <li>
               <button className={styles.button1}>
                 <NavLink to="/signin">Sign In</NavLink>
