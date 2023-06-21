@@ -2,15 +2,23 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import styles from "./myList.module.css";
 import {MdDeleteOutline} from 'react-icons/md'
-function Mylist() {
+
+
+function Mylist({ isMyList }) {
   const customerId = localStorage.getItem("customerId");
   const [foodArray, setFoodArray] = useState([]);
 
   useEffect(() => {
-    getFoodItem();
-  }, []);
+    isMyList ? getMyFoodItem() : getAllFoodItem();
+  }, [isMyList]);
   
-  function getFoodItem() {
+  function getAllFoodItem(){
+    axios.get("http://localhost:8085/api/v1/foodItem/getFood").then(res=>{setFoodArray(res.data);
+    console.log(foodArray)})
+    .catch(e => console.log(e));
+  } 
+
+  function getMyFoodItem() {
     axios
       .get(`http://localhost:8085/api/v1/foodItem/getMyList/${customerId}`)
       .then((res) => {
@@ -54,8 +62,11 @@ axios.delete(`http://localhost:8085/api/v1/foodItem/deleteFoodItem/${foodId}`)
                   <p className={styles.cardtext}>
                     Expiry Date : {foodItem.expiryDate}
                   </p>
+
                 </div>
-               <div>  <button onClick={() => deleteFoodItem(foodItem.foodId)}> <MdDeleteOutline/> </button> </div>
+                {isMyList ? (
+                 <div>  <button onClick={() => deleteFoodItem(foodItem.foodId)}> <MdDeleteOutline/> </button> </div>
+                  ) : null}
               </div>
             </div>
           ))}

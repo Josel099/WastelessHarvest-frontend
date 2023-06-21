@@ -32,7 +32,7 @@ function SignIn({ onSignIn }) {
           if (res.data.message == "Email not exists") {
             alert("Email not exists");
           } else if (res.data.message == "Login Success") {
-            navigate('/homeList');
+            navigate('/mylist');
             onSignIn(); // this method for displaying toogle bar when signed in .
             const customerId = res.data.customerId;// Extract the customer ID from the response and store it
             // Store the customer ID in local storage or in a state variable

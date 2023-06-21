@@ -43,7 +43,7 @@ function Donation() {
         expiryDate: formData.expiryDate,
       });
       //alert("Registation Successfully");
-      navigate("/homeList");
+      navigate("/mylist");
     } catch (err) {
       console.log(err);
     }
