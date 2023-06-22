@@ -39,15 +39,36 @@ const SignUp = ({ isSettings }) => {
         phone2: responseData.phoneNo2,
         address :responseData.address,
         pin: responseData.pinNo,
-        organization: responseData.organizationName,
+        organization: responseData.organizationName
       };
       setFormData(updatedFormData);
     } catch (error) {
       console.log(error);
     }
   };
+  //for update the data 
+   const handleUpdate = async(e) =>{
+    e.preventDefault();
+    try{
+      const updateData = {
+        customerName: formData.name,
+        phoneNo1: formData.phone1,
+        phoneNo2: formData.phone2,
+        address: formData.address,
+        pinNo: formData.pin,
+        organizationName: formData.organization,
+      };
   
-
+      if (formData.password) {
+        updateData.password = formData.password;
+      }
+      await axios.put(`http://localhost:8085/api/v1/customer/updateCustomer/${customerId}`,updateData);
+      navigate("/mylist");
+    }
+    catch (err) {
+      console.log(err);
+   };
+  }
 
 
 //for signup 
@@ -76,7 +97,7 @@ const SignUp = ({ isSettings }) => {
     }
     console.log(formData);
   }
- 
+
 
 return (
   <div>
@@ -84,7 +105,7 @@ return (
   
   <div className={styles.registrationform1}>
   <h1>{isSettings ? 'Your Account':'SignUp'}</h1>
-    <form  onSubmit={handleSubmit}>
+    <form  onSubmit={ isSettings ?  handleUpdate : handleSubmit}>
       <div className={styles.formfield}>
         <label htmlFor="name">Name</label>
         <input
@@ -181,4 +202,5 @@ return (
   </div>
 );
 }
+
 export default SignUp;
