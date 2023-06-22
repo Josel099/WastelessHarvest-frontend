@@ -3,7 +3,7 @@ import styles from "./navbar.module.css";
 import { NavLink } from "react-router-dom";
 import { GiHamburgerMenu} from "react-icons/gi";
 
-const Navbar = ({ isSignedIn, setIsMyList }) => {
+const Navbar = ({ isSignedIn, setIsMyList ,setIsSettings }) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);// for togglemenu showing and closing when clicking 
   
@@ -57,7 +57,7 @@ console.log(isSignedIn);
                 <NavLink onClick={() => setIsMyList(false)} to="/mylist" >Home List</NavLink>
               </li>
               <li>
-                <NavLink to="/">Settings</NavLink>
+                <NavLink onClick={() => setIsSettings(true)} to="/signup">Settings</NavLink>
               </li>
             </ul>
           </div>
@@ -73,7 +73,7 @@ console.log(isSignedIn);
             </li>
             <li>
               <button className={styles.button2}>
-                <NavLink to="/signup">Sign Up</NavLink>
+                <NavLink onClick={() => setIsSettings(false)} to="/signup">Sign Up</NavLink>
               </button>
             </li>
           </ul>

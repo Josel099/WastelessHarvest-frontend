@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {useNavigate} from 'react-router-dom'
 import axios from "axios";
 import styles from"./signup.module.css"
-import Navbar from "../navbar/Navbar"
-const SignUp = () => {
+const SignUp = ({ isSettings }) => {
 
-
+  const customerId = localStorage.getItem("customerId");
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,9 +21,36 @@ const SignUp = () => {
     setFormData({ ...formData, [name]: value });
   };
 
+  useEffect(() => {//for getting customer data to the input field
+    if (isSettings) {
+      getInfo();
+    }
+  }, [isSettings]);
+  
  
+  const getInfo = async () => {//arrow function for getting customer data to the input field
+    try {
+      const response = await axios.get(`http://localhost:8085/api/v1/customer/getCustomer/${customerId}`);
+      const responseData = response.data;
+      const updatedFormData = {
+        ...formData,
+        name: responseData.customerName,
+        phone1: responseData.phoneNo1,
+        phone2: responseData.phoneNo2,
+        address :responseData.address,
+        pin: responseData.pinNo,
+        organization: responseData.organizationName,
+      };
+      setFormData(updatedFormData);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  
 
 
+
+//for signup 
    const handleSubmit = async(e) => {
     e.preventDefault();
 
@@ -57,7 +83,7 @@ return (
   <div className={styles.registrationform}>
   
   <div className={styles.registrationform1}>
-    <h1>SignUp</h1>
+  <h1>{isSettings ? 'Your Account':'SignUp'}</h1>
     <form  onSubmit={handleSubmit}>
       <div className={styles.formfield}>
         <label htmlFor="name">Name</label>
@@ -69,16 +95,19 @@ return (
           onChange={(e) => handleChange('name', e.target.value)}
         />
       </div>
-      <div className={styles.formfield}>
-        <label htmlFor="email">Email</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          value={formData.email}
-          onChange={(e) => handleChange('email', e.target.value)}
-        />
-      </div>
+      {isSettings ? (
+                null
+                  ) :  <div className={styles.formfield}>
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={(e) => handleChange('email', e.target.value)}
+                  />
+                </div>}
+                 
       <div className={styles.formfield}>
         <label htmlFor="phone1">Phone Number 1</label>
         <input
@@ -132,8 +161,9 @@ return (
       </div>
 
       <div className={styles.formfield}>
-        <label htmlFor="password">Password</label>
+        <label htmlFor="password">{isSettings ? 'New' : null} Password</label>
         <input
+        placeholder='password'
           type="password"
           id="password"
           name="password"
@@ -144,7 +174,7 @@ return (
 
 
 
-      <button className={styles.buttonregister}type="submit" onClick={handleSubmit}>SignUp</button>
+      <button className={styles.buttonregister}type="submit" >{isSettings ? 'Update Account':'SignUp'}</button>
     </form>
     </div>
   </div>
