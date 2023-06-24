@@ -18,7 +18,7 @@ const SignUp = ({ isSettings }) => {
   const navigate = useNavigate();
 
   const handleChange = (name, value) => {
-    setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData, [name]: value });// prevent data lose using spread operator , the ...formData spreading the copy of the formdata value to the function the it only changing the specific keyvalue pair 
   };
 
   useEffect(() => {//for getting customer data to the input field

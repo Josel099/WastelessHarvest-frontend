@@ -18,11 +18,11 @@ a:any-link {
   flex-direction: row;/*defaultly row */ 
   justify-content: space-around; /*horizontal alignment*/
   align-items: center; /*vertically alignment*/
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
     position: fixed;
     z-index: 1;
-    background-color: #f1f5f3;
+    background-color: null;
 }
 
 .logo{
@@ -35,9 +35,9 @@ a:any-link {
   font-size: 3rem;
   font-weight: 500;
   text-transform: uppercase;
-  background: -webkit-linear-gradient(#b5caa0, rgb(64, 129, 105));
+  background:var(--primary-color);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-family:  var( --font-familyExo2);
 }
 
 .logo h2 span {
@@ -58,7 +58,7 @@ a:any-link {
 .menulink ul li > a {
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(49, 127, 81);
+  color: var(--primary-color);
 }
 
 .menulink ul li:hover > a {
@@ -83,16 +83,16 @@ a:any-link {
 
 .button1  {
   padding:  10px 22px;
-  background-color: rgb(47, 136, 103);
+  background-color: #fb0066;
   border-radius: 12px;
   color: rgb(255, 248, 248);
   transition-duration: 0.4s;
-  border: 1.8px solid rgb(47, 136, 103);
+  border: 1.8px solid rgb(225, 238, 233);
 
 }
 .button2  {
   padding: 10px 22px;
-  background-color: #fbf6f6;
+
   border: 1.8px solid rgb(47, 136, 103);
   border-radius: 12px;
   transition-duration: 0.4s;
@@ -103,11 +103,11 @@ a:any-link {
 .button1:hover {
 
   color: black;
-  background-color: #fbf6f6;
+  background-color: #fb0066;
   border: 1.8px solid rgb(47, 136, 103);
 }
 .button2:hover {
-  background-color: rgb(57, 157, 121); /* Green */
+  background-color: #d86e17; /* Green */
   color: white;
 }
 

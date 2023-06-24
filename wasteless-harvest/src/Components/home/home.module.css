@@ -1,25 +1,10 @@
-/* hero section   */
-.herosection {
-    height: 85vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 90vh;
-    color: green;
-    font-family: monospace
-  }
+
   
-  .herosection p {
-    font-size: 3rem;
-    text-transform: capitalize;
-    font-family: monospace
-    
-  }
-  
-  .herosection h1 {
-    font-size: 5rem;
-    text-transform: uppercase;
-    text-align: center;
-    
+  body {
+    background-image: url('../../Images/mainBG2.jpg');
+    background-position: bottom;
+    background-size:cover;
+    background-size:contain ;
+    overflow: auto;
+
   }
