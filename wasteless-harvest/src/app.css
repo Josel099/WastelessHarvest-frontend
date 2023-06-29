@@ -5,15 +5,17 @@
   *{
     margin: 0;
 padding: 0;
-font-family: 'Exo 2', sans-serif;
+
 }
 html {
     font-size: 63.5%;
   }
   :root {
-    --primary-color: #000000;
+    --primary-color: #8D8741;
     --font-size: 16px;
-    --font-familyExo2: 'Exo 2', sans-serif;
+    --font-familyExo2: ;
+    --secondary-color:#c8dce7;
+
   }
   
   

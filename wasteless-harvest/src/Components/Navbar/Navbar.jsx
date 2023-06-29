@@ -31,10 +31,10 @@ console.log(isSignedIn);
               <NavLink className={styles.switch} to="/">Home</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About Us</NavLink>
+              <NavLink to="/">About Us</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact Us</NavLink>
+              <NavLink to="/">Contact Us</NavLink>
             </li>
           </ul>
         </div>

@@ -29,13 +29,16 @@ a:any-link {
   width: 30%;
   display: flex;
   justify-content: center;
+  background-color: var( --secondary-color);
+  border-radius: 15px;
+  width: 350px;
 }
 
 .logo h2 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 550;
   text-transform: uppercase;
-  background:var(--primary-color);
+  color: var(--primary-color);
   -webkit-background-clip: text;
   font-family:  var( --font-familyExo2);
 }
