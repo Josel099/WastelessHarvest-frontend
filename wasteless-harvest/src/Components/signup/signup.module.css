@@ -5,7 +5,9 @@
   align-items: center;
   margin-top: 0px;
   padding: 20px;
-
+  background-image: url('../../Images/mainBG2.jpg');
+  background-size: cover;
+  background-position: bottom;
 }
 
 .registrationform1 {
@@ -17,7 +19,7 @@
 }
 
 .registrationform1 h1 {
-  color: green;
+  color: black;
   font-size: 4rem;
   margin-bottom: 20px;
 }
@@ -34,14 +36,14 @@
 
 .formfield input {
   padding: 8px;
-  border: 1px solid #cccccc;
+  border: 1px solid #f6f1f1;
   border-radius: 4px;
 }
 
 .buttonregister {
   width: 100%;
   padding: 10px;
-  background-color:green;
+  background-color:var(--primary-color);
   color: #fff;
   border: none;
   border-radius: 4px;

@@ -1,18 +1,23 @@
 .mainbody {
-  background-color: rgb(240, 237, 237);
+  background-color: rgb(21, 20, 20);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url('../../Images/mainBG2.jpg');
+  background-size: cover;
+  background-position: bottom;
+  border: 2px solid black;
 
 }
 
 .form-container {
   width: 30rem;
-  background-color: white;
+  background-color: rgb(7, 7, 7);
   padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: .5rem;
+  
+  box-shadow: 0 0 10px rgba(239, 229, 229, 0.1);
   
 }
 
@@ -22,7 +27,7 @@
 }
 
 .header h1 {
-  color: green;
+  color: black;
   font-size: 4rem;
 }
 
@@ -44,8 +49,8 @@
 
 .getin {
   padding: 1.5rem 3rem;
-  background-color: green;
-  color: white;
+  background-color: var(--primary-color);
+  color: rgb(16, 13, 13);
   font-size: 2.2rem;
   border: none;
   border-radius: 0.5rem;
@@ -53,16 +58,7 @@
 }
 
 .getin:hover {
-  background-color: darkgreen;
-}
-
-.check {
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.check input[type="checkbox"] {
-  margin-right: 0.5rem;
+  background-color: rgb(213, 223, 213);
 }
 
 .last {
@@ -72,62 +68,12 @@
 }
 
 .switch {
-  color: green;
-  text-decoration: none;
+  font-size: 2.2rem;
+  color: blue;
+  
+  /* text-decoration: none; */
 }
 
 .switch:hover {
   text-decoration: underline;
-}
-
-/* Responsive Styles */
-
-@media (max-width: 768px) {
-  .form-container {
-    width: 90%;
-    max-width: 30rem;
-  }
-
-  .header h1 {
-    font-size: 3.2rem;
-  }
-
-  .emailbox,
-  .pswbox {
-    font-size: 1.8rem;
-  }
-
-  .getin {
-    padding: 1.2rem 2.5rem;
-    font-size: 2rem;
-  }
-
-  .last {
-    font-size: 1.8rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .form-container {
-    width: 90%;
-    max-width: 30rem;
-  }
-
-  .header h1 {
-    font-size: 2.5rem;
-  }
-
-  .emailbox,
-  .pswbox {
-    font-size: 1.6rem;
-  }
-
-  .getin {
-    padding: 1rem 2rem;
-    font-size: 1.8rem;
-  }
-
-  .last {
-    font-size: 1.6rem;
-  }
 }

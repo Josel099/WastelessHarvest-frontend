@@ -38,7 +38,7 @@ axios.delete(`http://localhost:8085/api/v1/foodItem/deleteFoodItem/${foodId}`)
 }
 
   return (
-    <div>
+    <div className={styles.mainb1}>
       <div className={styles.mainbody}>
         <div className={styles.cardbodyouter}>
           {foodArray.map((foodItem) => (

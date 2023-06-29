@@ -12,7 +12,6 @@ const SignUp = ({ isSettings }) => {
     phone1: '',
     phone2: '',
     address: '',
-    pin: '',
     organization: '',
   });
   const navigate = useNavigate();
@@ -38,7 +37,6 @@ const SignUp = ({ isSettings }) => {
         phone1: responseData.phoneNo1,
         phone2: responseData.phoneNo2,
         address :responseData.address,
-        pin: responseData.pinNo,
         organization: responseData.organizationName
       };
       setFormData(updatedFormData);
@@ -55,7 +53,6 @@ const SignUp = ({ isSettings }) => {
         phoneNo1: formData.phone1,
         phoneNo2: formData.phone2,
         address: formData.address,
-        pinNo: formData.pin,
         organizationName: formData.organization,
       };
   
@@ -86,7 +83,6 @@ const SignUp = ({ isSettings }) => {
         phoneNo1: formData.phone1,
         phoneNo2:formData.phone2,
         address: formData.address,
-        pinNo: formData.pin,
         organizationName: formData.organization,
         password: formData.password
       });
@@ -157,16 +153,6 @@ return (
           name="address"
           value={formData.address}
           onChange={(e) => handleChange('address', e.target.value)}
-        />
-      </div>
-      <div className={styles.formfield}>
-        <label htmlFor="pin">PIN Number</label>
-        <input
-          type="text"
-          id="pin"
-          name="pin"
-          value={formData.pin}
-          onChange={(e) => handleChange('pin', e.target.value)}
         />
       </div>
 

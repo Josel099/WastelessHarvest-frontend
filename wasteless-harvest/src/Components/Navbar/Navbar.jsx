@@ -54,10 +54,10 @@ console.log(isSignedIn);
                 <NavLink  onClick={() => setIsMyList(true)} to="/mylist" >My List</NavLink>
               </li>
               <li>
-                <NavLink onClick={() => setIsMyList(false)} to="/mylist" >Home List</NavLink>
+                <NavLink onClick={() => setIsMyList(false)} to="/mylist" >Home </NavLink>
               </li>
               <li>
-                <NavLink onClick={() => setIsSettings(true)} to="/signup">Settings</NavLink>
+                <NavLink onClick={() => setIsSettings(true)} to="/signup">Account info</NavLink>
               </li>
             </ul>
           </div>

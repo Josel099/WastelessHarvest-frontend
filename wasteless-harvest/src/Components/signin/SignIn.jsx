@@ -93,7 +93,7 @@ function SignIn({ onSignIn }) {
 
         <br />
         <div className={styles.last}>
-          Don't have an account{" "}
+          Don't have an account?{" "}
           <Link className={styles.switch} to="/signup">
             Create
           </Link>

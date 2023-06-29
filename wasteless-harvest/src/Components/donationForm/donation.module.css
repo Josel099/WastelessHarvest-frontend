@@ -3,23 +3,28 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+ 
   }
   .maintip{
     padding:15rem;
+    background-image: url('../../Images/mainBG2.jpg');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
   }
   .headingdonation {
     margin-bottom: 2rem;
   }
   
   .headingdonation h1 {
-    color: green;
+    color: black;
   font-size: 4rem;
   }
   
   form {
     width: 400px;
     padding: 2rem;
-    border: 1px solid #ccc;
+    border: 1.5px solid #7d7a5a;
     border-radius: 5px;
   }
   
@@ -46,7 +51,7 @@
     width: 100%;
     padding: 0.7rem;
     font-size: 1rem;
-    background-color: #4caf50;
+    background-color: #9e9b7a;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -55,6 +60,6 @@
   }
   
   button[type='submit']:hover {
-    background-color: #45a049;
+    background-color: #7d7a5a;
   }
   

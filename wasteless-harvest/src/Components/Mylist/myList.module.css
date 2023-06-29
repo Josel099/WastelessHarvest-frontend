@@ -1,14 +1,22 @@
+
+.mainb1{
+
+    background-color: var(--secondary-color);
+    padding-top: 11rem;
+}
+
 .mainbody{
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 15rem;
+    /* position: relative;
+    top: 10rem; */
+    
 }
 .card{
     width: 80vw;
   height: 15rem;
-    background-color: rgb(238, 246, 238);
-    border: rgb(221, 230, 221) 5px solid ;
+    background-color: #b9b8b2;
+    border: rgb(114, 123, 114) 5px solid ;
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
@@ -19,8 +27,8 @@
     font-size: 15px;
 }
 .card:hover{
-    background-color: rgb(214, 227, 205);
-    border: rgb(106, 127, 109) 8px solid;
+    background-color: var(--primary--color);
+    border: rgb(84, 97, 86) 8px solid;
     width: 81vw;
     height: 15rem;
     
@@ -37,8 +45,8 @@ padding: 10px;
 }
 
 .cardbody button{
-    border: green solid 0px;
-    background-color: rgb(165, 175, 165);
+    border: black solid 0px;
+    background-color:var(--primary--color);
     
 }
 .cardbody button :hover{
