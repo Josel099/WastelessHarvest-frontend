@@ -18,11 +18,12 @@ a:any-link {
   flex-direction: row;/*defaultly row */ 
   justify-content: space-around; /*horizontal alignment*/
   align-items: center; /*vertically alignment*/
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+  box-shadow: rgba(135, 118, 118, 0.25) 0px 50px 100px -20px,
+    rgba(167, 135, 135, 0.3) 0px 30px 60px -30px;
     position: fixed;
     z-index: 1;
     background-color: null;
+
 }
 
 .logo{
@@ -66,7 +67,7 @@ a:any-link {
 
 .menulink ul li:hover > a {
   transform-origin: left;
-  color: rgb(37, 87, 66);
+  color: #5D5C61;
   text-decoration: underline;
   transition: 0.5s;
 }
@@ -75,6 +76,7 @@ a:any-link {
   width: 25%;
   display: flex;
   justify-content: center;
+  
   
 }
 .mainbuttons ul{
@@ -86,32 +88,34 @@ a:any-link {
 
 .button1  {
   padding:  10px 22px;
-  background-color: #fb0066;
+  background-color: #64624b;
   border-radius: 12px;
   color: rgb(255, 248, 248);
   transition-duration: 0.4s;
-  border: 1.8px solid rgb(225, 238, 233);
+  border: 1.8px solid var(--primary-color);
+  font-weight: bold;
 
 }
 .button2  {
   padding: 10px 22px;
-
-  border: 1.8px solid rgb(47, 136, 103);
+background-color: var(--secondary-color);
+  border: 1.8px solid var(--primary-color);
   border-radius: 12px;
   transition-duration: 0.4s;
   color: black;
   margin: 20px;
+  font-weight: bold;
 }
 
 .button1:hover {
-
+  font-weight: 3px;
   color: black;
-  background-color: #fb0066;
-  border: 1.8px solid rgb(47, 136, 103);
+  background-color: var(--secondary-color);
 }
 .button2:hover {
-  background-color: #d86e17; /* Green */
+  background-color: #64624b;
   color: white;
+  
 }
 
 
