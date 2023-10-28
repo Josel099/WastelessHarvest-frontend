@@ -92,14 +92,23 @@ The project's structure is organized as follows:
 
 ## Contributing
 
-We encourage and welcome contributions from the community. If you'd like to contribute to WastelessHarvest, please refer to our [Contribution Guidelines](CONTRIBUTING.md).
+We welcome contributions to the WastelessHarvest frontend project. By contributing, you can play a crucial role in reducing food waste and making a positive impact on our community. There are various ways to get involved and contribute:
+
+- **Bug Reports**: If you come across any issues, bugs, or unexpected behavior, please create an issue in our repository to report the problem. Be sure to provide detailed information and steps to reproduce the issue.
+
+- **Feature Requests**: If you have ideas for new features or improvements, feel free to create a feature request issue. We value your suggestions for enhancing the platform.
+
+- **Pull Requests**: We encourage developers to submit pull requests to address issues or contribute new features. Fork our repository, make your changes, and create a pull request for review.
+
+- **Documentation**: If you have expertise in documentation, you can help improve our project's documentation for users and contributors.
+
+We appreciate your contributions and value your input.Thank you for considering contributing to WastelessHarvest. Together, we can create a more sustainable and equitable future.
 
 ## License
 
-This project is open-source and is licensed under the MIT License. For more details, please read the [LICENSE](LICENSE) file.
+This project is open-source and is licensed under the MIT License.
 
 ## Contact
 
-If you have any questions, require assistance, or wish to get in touch with the project team, please reach out to us at [your@email.com].
+If you have any questions or require assistance, please feel free to reach out to us at [josel.xavier2017@gmail.com]. We welcome your involvement in our mission to reduce food waste and combat hunger. Together, we can make a significant difference!
 
-We look forward to your involvement in our mission to reduce food waste and combat hunger. Together, we can make a significant difference!
