@@ -1,4 +1,4 @@
-# WastelessHarvest Frontend
+<h1 align="center">WastelessHarvest</h1>
 
 Welcome to the WastelessHarvest Frontend repository! 
 WastelessHarvest is a powerful food waste management system aimed at addressing the global issue 
@@ -102,8 +102,9 @@ We welcome contributions to the WastelessHarvest frontend project. By contributi
 
 We appreciate your contributions and value your input.Thank you for considering contributing to WastelessHarvest. Together, we can create a more sustainable and equitable future.
 
-## License  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-This project is open-source and is licensed under the MIT License.
+## License   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+This project is open-source and is licensed under the [MIT License](LICENSE). See the [LICENSE](LICENSE) file for details.
+
 
 ## Contact
 
