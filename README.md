@@ -52,7 +52,17 @@ To fully utilize the application, you need to set up the backend of the project.
 
 ## Getting Started
 
+
 To set up the WastelessHarvest Frontend on your local machine, follow these steps:
+
+To set up the WastelessHarvest Frontend on your local machine, follow these steps:
+
+### System Requirements
+
+Before you begin, ensure your system meets the following requirements:
+
+- **Node.js:** Ensure you have Node.js installed. The project requires a minimum Node.js version of 14.0.0. You can download Node.js from [nodejs.org](https://nodejs.org/).
+- **npm:** Verify that you have npm (Node Package Manager) installed. npm is typically included with Node.js.
 
 1. Clone this repository to your local environment.
 2. Navigate to the project directory.
@@ -60,6 +70,7 @@ To set up the WastelessHarvest Frontend on your local machine, follow these step
 4. Launch the development server by running `npm start`.
 5. Open your web browser and access the application at `http://localhost:3000`.
 
+  
 ## Technologies Used
 
 This project is built with the following key technologies:
