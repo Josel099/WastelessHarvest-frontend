@@ -17,9 +17,7 @@ of food wastage. This repository contains the frontend codebase for our applicat
 
 ## Overview
 WastelessHarvest is a revolutionary platform dedicated to reducing food waste by connecting food suppliers (e.g., restaurants, supermarkets, caterers) 
-with individuals or organizations in need of food assistance.We aim to act as a bridge between orphanage homes and citizens to play a crucial role in nurturing the citizens of tomorrow.
- Our goal is to help them in their natural growth and reclaim their lives by supporting orphanage homes in reaching a broader audience.
- 
+with individuals or organizations in need of food assistance.
 The food waste management system connects food suppliers with nearby individuals or organizations in need of food. Food suppliers create listings for their excess food on
 the platform, describing the type and quantity of food available, as well as the pickup location and time. Recipients  search for available listings on the platform and contact the food supplier directly to arrange for pickup. The system provides contact details for the supplier
 
@@ -28,7 +26,7 @@ This project is built using the following technologies:
 - **Backend**: Spring Boot
 - **Database**: MySQL
 
-This repository contains the frontend of  our application, which is built using React.The frontend of this application is responsible for the user interface and user interactions. It provides essential features for both suppliers and recipients.
+This repository contains the frontend of  our application, which is built using React.
 To fully utilize the application, you need to set up the backend of the project. You can find instructions for setting up the backend by visiting the  [backend repository](https://github.com/Josel099/Wasteles-Harvest-backend) .
 
 
@@ -104,8 +102,7 @@ We welcome contributions to the WastelessHarvest frontend project. By contributi
 
 We appreciate your contributions and value your input.Thank you for considering contributing to WastelessHarvest. Together, we can create a more sustainable and equitable future.
 
-## License
-
+## License  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 This project is open-source and is licensed under the MIT License.
 
 ## Contact
