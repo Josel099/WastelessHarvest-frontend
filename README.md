@@ -1,5 +1,11 @@
 <h1 align="center">⭐️WastelessHarvest Frontend</h1>
 
+![GitHub contributors](https://img.shields.io/github/contributors/Josel099/WastelessHarvest-frontend)
+![GitHub forks](https://img.shields.io/github/forks/Josel099/WastelessHarvest-frontend)
+![GitHub Repo stars](https://img.shields.io/github/stars/Josel099/WastelessHarvest-frontend)
+
+
+
 Welcome to the WastelessHarvest Frontend repository 🌱 !   WastelessHarvest is a powerful food waste management system aimed at addressing the global issue of food wastage. This repository contains the frontend codebase for our application.
 
 ## Table of Contents
