@@ -105,4 +105,4 @@ This project is open-source and is licensed under the MIT License. 📃
 
 ## Contact 📧
 
-If you have any questions or require assistance, please feel free to reach out to us at [josel.xavier2017@gmail.com]. We welcome your involvement in our mission to reduce food waste and combat hunger. Together, we can make a significant difference! 💌
+If you have any questions or require assistance, please feel free to reach out to us at josel.xavier2017@gmail.com. We welcome your involvement in our mission to reduce food waste and combat hunger. Together, we can make a significant difference! 💌
